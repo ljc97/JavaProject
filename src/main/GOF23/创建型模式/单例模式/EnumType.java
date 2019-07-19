@@ -1,7 +1,7 @@
 package 创建型模式.单例模式;
 
 /**
- * @Author Linjc
+ * @Author Linjcyyt
  * @Description 枚举式创建单例
  * @date 2019/6/13
  */
