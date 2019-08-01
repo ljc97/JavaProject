@@ -13,7 +13,7 @@ import java.util.Date;
  */
 @Setter
 @Getter
-public class Sheep implements Cloneable,Serializable {
+public class Sheep implements Cloneable, Serializable {
 //    被模仿克隆的原型需要继承Cloneable接口，
 //    但是这个接口没有需要重写的方法，属于一个标记接口
 

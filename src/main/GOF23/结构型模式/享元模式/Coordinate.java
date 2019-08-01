@@ -12,7 +12,7 @@ import lombok.Setter;
 @Setter
 public class Coordinate {
 
-    private int x,y;//定义棋子的坐标
+    private int x, y;//定义棋子的坐标
 
     public Coordinate(int x, int y) {
         this.x = x;

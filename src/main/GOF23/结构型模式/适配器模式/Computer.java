@@ -7,11 +7,11 @@ package 结构型模式.适配器模式;
  */
 public class Computer {
 
-    public void request1(Target t){
+    public void request1(Target t) {
         t.handleReq();
     }
 
-    public void request2(Target t){
+    public void request2(Target t) {
         t.handleReq();
     }
 
@@ -25,7 +25,6 @@ public class Computer {
         Keyboard keyboard = new Keyboard();
         Adapter2 adapter2 = new Adapter2(keyboard);
         computer2.request2(adapter1);
-
 
 
     }

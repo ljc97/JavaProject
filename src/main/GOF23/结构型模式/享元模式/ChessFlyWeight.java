@@ -10,7 +10,7 @@ public interface ChessFlyWeight {
 }
 
 
-class ConcreteChess implements ChessFlyWeight{
+class ConcreteChess implements ChessFlyWeight {
 
     private String color;
 
@@ -30,7 +30,7 @@ class ConcreteChess implements ChessFlyWeight{
 
     @Override
     public void display(Coordinate coordinate) {
-        System.out.println("棋子颜色:"+color);
-        System.out.println("棋子位置X:"+coordinate.getX()+",Y:"+coordinate.getY());
+        System.out.println("棋子颜色:" + color);
+        System.out.println("棋子位置X:" + coordinate.getX() + ",Y:" + coordinate.getY());
     }
 }

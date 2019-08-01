@@ -6,7 +6,7 @@ package 创建型模式.建造者模式;
  * @date 2019/6/14
  */
 public class ShipDirectory implements AirShipDirector {
-//    这里为具体的组装者
+    //    这里为具体的组装者
 //    需要实现具体的创建
     private AirShipBuilder builder;
 

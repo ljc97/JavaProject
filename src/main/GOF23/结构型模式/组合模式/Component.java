@@ -5,13 +5,15 @@ public interface Component {
 }
 
 //容器节点
-interface Composite extends Component{
+interface Composite extends Component {
     void add(Component component);
+
     void del(Component component);
+
     Component getChild(int index);
 }
 
 //叶子节点
-interface Leaf extends Component{
+interface Leaf extends Component {
 
 }

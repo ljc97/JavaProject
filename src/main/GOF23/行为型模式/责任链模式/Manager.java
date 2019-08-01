@@ -14,9 +14,9 @@ public class Manager extends Leader {
     @Override
     public void handleRequest(LeaveRequest request) {
         if (request.getLeaveDays() < 10) {
-            System.out.println("经理审批了"+request.getEmpName()+"。审批通过");
+            System.out.println("经理审批了" + request.getEmpName() + "。审批通过");
         } else {
-            if (this.nextLeader != null){
+            if (this.nextLeader != null) {
                 this.nextLeader.handleRequest(request);
             }
         }

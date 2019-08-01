@@ -18,7 +18,7 @@ public class Client {
         s2.setName("少利");
         System.out.println(s2.toString());
 
-        System.out.println("两者是否相等："+ (s1 == s2));
+        System.out.println("两者是否相等：" + (s1 == s2));
 
         d.setTime(1231231L);
         s1.setBirthday(d);

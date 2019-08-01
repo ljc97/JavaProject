@@ -16,12 +16,13 @@ public class SlackerType {
     }
 
     /**
-     *Description 这种写法在多线程效率更好一些
+     * Description 这种写法在多线程效率更好一些
      * 双重检测锁实现
-     * @author Linjc
-     * @date 2019/6/13
+     *
      * @param
      * @return SlackerType
+     * @author Linjc
+     * @date 2019/6/13
      */
     private static SlackerType getInstance1() {
         if (slackerType == null) {

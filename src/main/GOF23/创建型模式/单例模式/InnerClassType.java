@@ -10,17 +10,17 @@ public class InnerClassType {
 //    2、创建内部类，在内部类中创建当前类的实例对象
 //    3、提供对外接口，访问内部类
 
-    private InnerClassType(){
+    private InnerClassType() {
     }
 
-//    该类被实例化后，并不会立即实例化静态内部类，
+    public static InnerClassType getInstance() {
+        return InnerClass.instance;
+    }
+
+    //    该类被实例化后，并不会立即实例化静态内部类，
 //    当对外接口被使用后，才会创建，所以该类属于延时加载
 //    并且内部类加载时是天然线程安全的，保证了安全的同时提高了效率
-    private static class InnerClass{
+    private static class InnerClass {
         private static final InnerClassType instance = new InnerClassType();
-    }
-
-    public static InnerClassType getInstance(){
-        return InnerClass.instance;
     }
 }

@@ -11,7 +11,7 @@ public interface Department {
 
 
 //具体的部门（研发部）
-class Development implements Department{
+class Development implements Department {
     //    持有中介者的引用（总经理）
     private Meditor meditor;
 
@@ -34,7 +34,7 @@ class Development implements Department{
 
 
 //具体的部门（财务部）
-class Finacial implements Department{
+class Finacial implements Department {
     //    持有中介者的引用（总经理）
     private Meditor meditor;
 
@@ -56,7 +56,7 @@ class Finacial implements Department{
 
 
 //具体的部门（市场部）
-class Market implements Department{
+class Market implements Department {
     //    持有中介者的引用（总经理）
     private Meditor meditor;
 

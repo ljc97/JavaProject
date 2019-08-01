@@ -14,9 +14,9 @@ public class ViceGeneralManager extends Leader {
     @Override
     public void handleRequest(LeaveRequest request) {
         if (request.getLeaveDays() < 20) {
-            System.out.println("副总经理审批了"+request.getEmpName()+"。审批通过");
+            System.out.println("副总经理审批了" + request.getEmpName() + "。审批通过");
         } else {
-            if (this.nextLeader != null){
+            if (this.nextLeader != null) {
                 this.nextLeader.handleRequest(request);
             }
         }

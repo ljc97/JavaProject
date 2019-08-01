@@ -8,6 +8,8 @@ import java.rmi.RemoteException;
 /**
  * 客户端程序
  * 在客户端调用远程对象上的远程方法，并返回结果。
+ *
+ * @author linjc
  */
 public class HelloClient {
     public static void main(String[] args) {

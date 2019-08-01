@@ -28,11 +28,12 @@ public class ProxyStar implements Star {
     }
 
     /**
-     *Description 真实需要的对象才能做的方法
-     * @author Linjc
-     * @date 2019/6/15
+     * Description 真实需要的对象才能做的方法
+     *
      * @param
      * @return void
+     * @author Linjc
+     * @date 2019/6/15
      */
     @Override
     public void sing() {

@@ -1,7 +1,8 @@
 package 行为型模式.迭代器模式;
 
 /**
- *Description 自定义迭代器接口
+ * Description 自定义迭代器接口
+ *
  * @author Linjc
  * @date 2019/6/20
  * @return

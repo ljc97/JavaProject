@@ -4,7 +4,7 @@ public interface Brand {
     void sayBrand();
 }
 
-class Lenovo implements Brand{
+class Lenovo implements Brand {
     @Override
     public void sayBrand() {
         System.out.print("联想");
@@ -12,7 +12,7 @@ class Lenovo implements Brand{
 }
 
 
-class Dell implements Brand{
+class Dell implements Brand {
     @Override
     public void sayBrand() {
         System.out.print("戴尔");

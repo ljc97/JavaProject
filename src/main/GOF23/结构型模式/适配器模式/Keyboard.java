@@ -7,7 +7,7 @@ package 结构型模式.适配器模式;
  */
 public class Keyboard {
 
-    public void request(){
+    public void request() {
         System.out.println("可以完成用户需求！");
     }
 }

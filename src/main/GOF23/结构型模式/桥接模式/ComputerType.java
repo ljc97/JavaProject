@@ -12,7 +12,7 @@ public class ComputerType {
         this.brand = brand;
     }
 
-    public void sayBrand(){
+    public void sayBrand() {
         brand.sayBrand();
     }
 }
@@ -24,7 +24,7 @@ class DeskTop extends ComputerType {
 
     }
 
-    public void sale(){
+    public void sale() {
         super.sayBrand();
         System.out.println("台式销售一台");
     }
@@ -37,7 +37,7 @@ class LapTop extends ComputerType {
         super(brand);
     }
 
-    public void sale(){
+    public void sale() {
         super.sayBrand();
         System.out.println("笔记本销售一台");
     }

@@ -24,8 +24,8 @@ public class ConcreteMyAggregate {
         list.remove(obj);
     }
 
-//    提供对外的内部类方法
-    public MyIterator createInterator(){
+    //    提供对外的内部类方法
+    public MyIterator createInterator() {
         return new ConcreteInterator();
     }
 

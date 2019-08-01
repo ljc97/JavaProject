@@ -7,7 +7,7 @@ package 结构型模式.组合模式.模拟杀毒软件;
  */
 public class Client {
     public static void main(String[] args) {
-        AbstractFile f1,f2,f3,f4,f5;
+        AbstractFile f1, f2, f3, f4, f5;
         f1 = new Floder();
         f2 = new ImgFile();
         f3 = new textFile();

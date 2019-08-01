@@ -6,7 +6,7 @@ import lombok.Setter;
 
 /**
  * @Author Linjc
- * @Description  需要生产出的对象
+ * @Description 需要生产出的对象
  * @date 2019/6/14
  */
 @Data
@@ -19,19 +19,19 @@ public class AirShip {
 }
 
 //以下是飞船所需要的零件
-class OrbitalModule{
+class OrbitalModule {
     @Setter
     @Getter
     private String name;
 }
 
-class Engine{
+class Engine {
     @Setter
     @Getter
     private String name;
 }
 
-class EscapeTower{
+class EscapeTower {
     @Setter
     @Getter
     private String name;
