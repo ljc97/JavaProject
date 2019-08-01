@@ -24,7 +24,7 @@ public class Computer {
         Computer computer2 = new Computer();
         Keyboard keyboard = new Keyboard();
         Adapter2 adapter2 = new Adapter2(keyboard);
-        computer2.request2(adapter1);
+        computer2.request2(adapter2);
 
 
     }
