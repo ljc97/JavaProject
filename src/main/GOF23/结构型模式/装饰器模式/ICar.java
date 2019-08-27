@@ -18,7 +18,8 @@ class Car implements ICar {
 class SuperCar implements ICar {
     protected ICar car;
 
-    public SuperCar(ICar car) {
+    public SuperCar(
+            ICar car) {
         this.car = car;
     }
 

@@ -12,12 +12,13 @@ public class SerializeDemo {
 
     public static void main(String[] args) {
         String filePath = "E:/person.ser";
-        Person person = new Person();
-        person.setId(1);
-        person.setName("zzz");
-        person.setSex('1');
-        person.setPassWod("xxx");
-        SerializeDemo.writeObject(person, filePath);
+//        Person person = new Person("qqq");
+//        person.setId(1);
+//        person.setName("zzz");
+//        person.setSex('1');
+//        person.setPassWod("xxx");
+//        Person.setStaticStr("static String");
+//        SerializeDemo.writeObject(person, filePath);
         Person p = SerializeDemo.readObject(filePath, Person.class);
         System.out.println(p.toString());
 

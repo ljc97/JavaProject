@@ -10,30 +10,33 @@ import java.io.Serializable;
  */
 
 public class Person implements Serializable {
+    /**
+     * static标识虽然这个字段无法参与序列化，
+     * 但是也标识了这个字段属于类
+     * 当类被创建了，自然就有了，和序列化结果无关
+     */
+    public static final String staticFinal = "staticFinalaaaa";
 
     private int id;
     private String name;
     private char sex;
     private transient String passWod;
-
     /**
      * 序列化发生在堆里，而静态字段在方法区，所以不参与序列化
      */
-    private static String staticStr;
+    public static String staticStr;
 
     /**
      * 反序列化时是使用无参的构造函数生成的对象，
      * 所以被final标注并且赋初值的属性属于初始化阶段完成，
      * 无法被transient影响
      */
-    private transient final String finalStr = "asd";
+    private transient final String finalStr;
 
-    /**
-     * static标识虽然这个字段无法参与序列化，
-     * 但是也标识了这个字段属于类
-     * 当类被创建了，自然就有了，和序列化结果无关
-     */
-    public static final String staticFinal = "staticFinal";
+    public Person(String s) {
+        this.finalStr = s;
+        System.out.println("wo shi gou zhao han shu");
+    }
 
     public String getStaticFinal() {
         return staticFinal;
@@ -90,8 +93,9 @@ public class Person implements Serializable {
                 ", name='" + name + '\'' +
                 ", sex=" + sex +
                 ", passWod='" + passWod + '\'' +
+                ", staticStr='" + staticStr + '\'' +
                 ", finalStr='" + finalStr + '\'' +
-                ", finalStr='" + staticFinal + '\'' +
+                ", staticFinal='" + staticFinal + '\'' +
                 '}';
     }
 }
