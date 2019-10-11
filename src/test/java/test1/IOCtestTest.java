@@ -1,8 +1,8 @@
 package test1;
 
-import IOCTest.AnotherBean;
-import IOCTest.Bean;
-import IOCTest.IOCtest;
+import com.linjc.IOCTest.AnotherBean;
+import com.linjc.IOCTest.Bean;
+import com.linjc.IOCTest.IOCtest;
 import org.junit.After;
 import org.junit.Before;
 import org.junit.Test;
