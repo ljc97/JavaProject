@@ -6,8 +6,7 @@ package com.linjc.错题记录;
  * @Date 2019/8/20 16:51
  * @Version 1.0
  */
-public class B
-{
+public class B {
 
     public static B t1 = new B();
     public static B t2 = new B();
@@ -18,6 +17,7 @@ public class B
 
     static {
         System.out.println("静态块2");
+        int i = 1 / 0;
     }
 
     public static void main(String[] args) {
